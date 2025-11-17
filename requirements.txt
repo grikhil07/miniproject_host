@@ -28,7 +28,7 @@ idna
 jmespath
 lxml==6.0.0
 packaging
-protobuf==4.25.3
+protobuf>=5.28.0
 pyasn1-modules==0.2.8
 pyHanko==0.29.1
 pyhanko-certvalidator==0.27.0
