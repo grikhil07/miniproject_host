@@ -25,8 +25,18 @@ SECRET_KEY = "django-insecure-9m*tzk4e)d-o_4ohdoa+a+=ng@9q88@j&s0p)+)i8v#5))kf1-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# settings.py
 
+# The value 'localhost' and '127.0.0.1' are usually already there.
+ALLOWED_HOSTS = [
+    'student-mental-health-status-predictor.onrender.com', 
+    '127.0.0.1', 
+    'localhost', 
+    # Add the following line to ensure the gunicorn server itself can connect
+    '.render.com'
+] 
+# If using Django environment variables, you might also need this:
+# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',') if os.environ.get('ALLOWED_HOSTS') else []
 
 # Application definition
 
