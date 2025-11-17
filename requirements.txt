@@ -42,3 +42,7 @@ tabulate
 tzlocal==5.3.1
 urllib3
 wheel==0.44.0
+# ... (other dependencies)
+
+# HTTP Server for Production
+gunicorn
