@@ -27,18 +27,17 @@ DEBUG = True
 
 # settings.py
 
-# The value 'localhost' and '127.0.0.1' are usually already there.
+# settings.py
+
 ALLOWED_HOSTS = [
-    'student-mental-health-status-predictor.onrender.com', 
+    # Your specific Render URL
+    'student-mental-health-status-predictor-1055.onrender.com', 
+    # Wildcard for the Render domain to allow any internal hostnames or future changes
+    '.render.com', 
+    # Local hosts (keep these)
     '127.0.0.1', 
     'localhost', 
-    # Add the following line to ensure the gunicorn server itself can connect
-    '.render.com'
-] 
-# If using Django environment variables, you might also need this:
-# ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',') if os.environ.get('ALLOWED_HOSTS') else []
-
-# Application definition
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",

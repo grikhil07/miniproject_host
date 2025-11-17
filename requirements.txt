@@ -1,25 +1,29 @@
-# Core Frameworks and Dependencies
+# Core Web and ML (keep only what you actively use)
 Django==5.2.4
 djangorestframework==3.16.0
 Flask
 SQLAlchemy
-matplotlib==3.9.2
+#matplotlib==3.9.2  # Keep/Remove as necessary
 numpy
 pandas
-scikit-learn==1.5.1 
+scikit-learn==1.5.1 # Keep pinned for model stability
 scipy
-seaborn
+#seaborn
 statsmodels
-tensorflow # Added as an assumption for ML/DL projects, verify if needed
+#tensorflow # Keep/Remove as necessary
 xgboost==3.0.2
 
-# Database Drivers
-mysqlclient==2.2.7
-PyMySQL==1.1.1
-psycopg2-binary==2.9.10
-pyodbc
+# Production Server
+gunicorn
 
-# Utility and Infrastructure (Simplified)
+# Database Drivers
+# Only include the one you need (e.g., PostgreSQL is common on Render)
+# mysqlclient==2.2.7
+# PyMySQL==1.1.1
+psycopg2-binary==2.9.10
+# pyodbc
+
+# Utility and Infrastructure (Remove desktop/dev-specific tools)
 appdirs==1.4.4
 asgiref==3.9.1
 certifi
@@ -30,10 +34,10 @@ lxml==6.0.0
 packaging
 protobuf>=5.28.0
 pyasn1-modules==0.2.8
-pyHanko==0.29.1
-pyhanko-certvalidator==0.27.0
-PyQt5==5.15.10
-PyQtWebEngine==5.15.6
+#pyHanko==0.29.1 # Remove unless your web app signs PDFs
+#pyhanko-certvalidator==0.27.0 # Remove
+#PyQt5==5.15.10 # REMOVE
+#PyQtWebEngine==5.15.6 # REMOVE
 requests
 setuptools==75.1.0
 six
@@ -42,7 +46,3 @@ tabulate
 tzlocal==5.3.1
 urllib3
 wheel==0.44.0
-# ... (other dependencies)
-
-# HTTP Server for Production
-gunicorn
