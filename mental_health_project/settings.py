@@ -29,12 +29,16 @@ DEBUG = True
 
 # settings.py
 
+# settings.py
+
 ALLOWED_HOSTS = [
-    # Your specific Render URL
-    'student-mental-health-status-predictor-1055.onrender.com', 
-    # Wildcard for the Render domain to allow any internal hostnames or future changes
+    # Add the specific URL (use the URL Render gave you)
+    'student-mental-health-status-predictor-xxxx.onrender.com', 
+
+    # Add the generic Render domain wildcard (Highly recommended for stability)
     '.render.com', 
-    # Local hosts (keep these)
+
+    # Keep local hosts
     '127.0.0.1', 
     'localhost', 
 ]
