@@ -1,0 +1,23 @@
+from django import forms
+
+class SurveyForm(forms.Form):
+    anxiety_level = forms.IntegerField(label='Anxiety Level')
+    self_esteem = forms.IntegerField(label='Self Esteem')
+    mental_health_history = forms.IntegerField(label='Mental Health History')
+    depression = forms.IntegerField(label='Depression')
+    headache = forms.IntegerField(label='Headache')
+    blood_pressure = forms.IntegerField(label='Blood Pressure')
+    sleep_quality = forms.IntegerField(label='Sleep Quality')
+    breathing_problem = forms.IntegerField(label='Breathing Problem')
+    noise_level = forms.IntegerField(label='Noise Level')
+    living_conditions = forms.IntegerField(label='Living Conditions')
+    safety = forms.IntegerField(label='Safety')
+    basic_needs = forms.IntegerField(label='Basic Needs')
+    academic_performance = forms.IntegerField(label='Academic Performance')
+    study_load = forms.IntegerField(label='Study Load')
+    teacher_student_relationship = forms.IntegerField(label='Teacher Student Relationship')
+    future_career_concerns = forms.IntegerField(label='Future Career Concerns')
+    social_support = forms.IntegerField(label='Social Support')
+    peer_pressure = forms.IntegerField(label='Peer Pressure')
+    extracurricular_activities = forms.IntegerField(label='Extracurricular Activities')
+    bullying = forms.IntegerField(label='Bullying')
