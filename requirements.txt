@@ -46,3 +46,4 @@ tabulate
 tzlocal==5.3.1
 urllib3
 wheel==0.44.0
+whitenoise==6.5.0
