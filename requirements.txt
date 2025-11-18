@@ -1,49 +1,61 @@
-# Core Web and ML (keep only what you actively use)
+# # Core Web and ML (keep only what you actively use)
+# Django==5.2.4
+# djangorestframework==3.16.0
+# Flask
+# SQLAlchemy
+# #matplotlib==3.9.2  # Keep/Remove as necessary
+# numpy
+# pandas
+# scikit-learn==1.5.1 # Keep pinned for model stability
+# scipy
+# #seaborn
+# statsmodels
+# #tensorflow # Keep/Remove as necessary
+# xgboost==3.0.2
+
+# # Production Server
+# gunicorn
+
+# # Database Drivers
+# # Only include the one you need (e.g., PostgreSQL is common on Render)
+# # mysqlclient==2.2.7
+# # PyMySQL==1.1.1
+# psycopg2-binary==2.9.10
+# # pyodbc
+
+# # Utility and Infrastructure (Remove desktop/dev-specific tools)
+# appdirs==1.4.4
+# asgiref==3.9.1
+# certifi
+# cryptography==45.0.5
+# idna
+# jmespath
+# lxml==6.0.0
+# packaging
+# protobuf>=5.28.0
+# pyasn1-modules==0.2.8
+# #pyHanko==0.29.1 # Remove unless your web app signs PDFs
+# #pyhanko-certvalidator==0.27.0 # Remove
+# #PyQt5==5.15.10 # REMOVE
+# #PyQtWebEngine==5.15.6 # REMOVE
+# requests
+# setuptools==75.1.0
+# six
+# sqlparse==0.5.3
+# tabulate
+# tzlocal==5.3.1
+# urllib3
+# wheel==0.44.0
+# whitenoise==6.5.0
+
+
+# minimal requirement
+
 Django==5.2.4
-djangorestframework==3.16.0
-Flask
-SQLAlchemy
-#matplotlib==3.9.2  # Keep/Remove as necessary
+gunicorn==23.0.0
+whitenoise==6.5.0
+psycopg2-binary==2.9.10          # only if you use Postgres
 numpy
 pandas
-scikit-learn==1.5.1 # Keep pinned for model stability
-scipy
-#seaborn
-statsmodels
-#tensorflow # Keep/Remove as necessary
+scikit-learn==1.5.1
 xgboost==3.0.2
-
-# Production Server
-gunicorn
-
-# Database Drivers
-# Only include the one you need (e.g., PostgreSQL is common on Render)
-# mysqlclient==2.2.7
-# PyMySQL==1.1.1
-psycopg2-binary==2.9.10
-# pyodbc
-
-# Utility and Infrastructure (Remove desktop/dev-specific tools)
-appdirs==1.4.4
-asgiref==3.9.1
-certifi
-cryptography==45.0.5
-idna
-jmespath
-lxml==6.0.0
-packaging
-protobuf>=5.28.0
-pyasn1-modules==0.2.8
-#pyHanko==0.29.1 # Remove unless your web app signs PDFs
-#pyhanko-certvalidator==0.27.0 # Remove
-#PyQt5==5.15.10 # REMOVE
-#PyQtWebEngine==5.15.6 # REMOVE
-requests
-setuptools==75.1.0
-six
-sqlparse==0.5.3
-tabulate
-tzlocal==5.3.1
-urllib3
-wheel==0.44.0
-whitenoise==6.5.0
